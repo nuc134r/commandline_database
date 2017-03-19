@@ -38,11 +38,6 @@ const
   c_textDimColor = DarkGray;
 
   { ---=== KEYS ===--- }
-  {****d* db_constants/k_*
-   *  DESCRIPTION
-   *    Constants for few keyboard keys.
-   *  SOURCE
-   *}
   k_backspace : TKey = (code0 : #8;  code1 : #0 );
   k_escape    : TKey = (code0 : #27; code1 : #0 );
   k_tab       : TKey = (code0 : #9;  code1 : #0 );

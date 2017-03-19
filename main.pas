@@ -44,6 +44,12 @@ uses
   db_windows_sort_classrooms,
   db_windows_sort_entries;
 
+procedure do_nothing;
+begin
+  { Isn't it strange how broken glass tastes like blood? }
+end;
+
+procedure launch_window_chain;
 const
   { menu/mode indexes }
   menu_load  = 0;
@@ -58,13 +64,6 @@ const
   submenu_sort = 3;
 
   exit = -1;
-
-procedure do_nothing;
-begin
-  { Isn't it strange how broken glass tastes like blood? }
-end;
-
-procedure launch_window_chain;
 var
   mode : integer;
 procedure launch_teachers_submenu;
@@ -122,7 +121,7 @@ begin
       menu_rooms : launch_classrooms_submenu;
       menu_ttabl : launch_timetable_submenu;
     end;
-    mode := show_windows_main(false); //preventing flicker
+    mode := show_windows_main(false);
   end;
 end;
 
